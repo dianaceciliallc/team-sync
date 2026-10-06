@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#f5f6fa">
+    <meta name="description" content="Project overview, team milestones, progress, and quick links.">
+    <title>Project Details | TeamSync Campus</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../css/styles.css">
+    <script type="module" src="project-page.mjs"></script>
+</head>
+
+<body>
+    <header class="site-header" id="site-header"></header>
+    <main class="site-main project-page">
+        <nav class="project-breadcrumb" aria-label="Breadcrumb">
+            <a href="../index.html">Projects</a>
+            <span aria-hidden="true">/</span>
+            <span aria-current="page">Project details</span>
+        </nav>
+
+        <section class="project-overview surface-panel" aria-labelledby="project-title">
+            <div class="project-overview-main">
+                <div class="project-heading">
+                    <div>
+                        <span class="project-kicker">CAPSTONE PROJECT</span>
+                        <h1 id="project-title">Project Name | Inform Name</h1>
+                    </div>
+                    <div class="project-heading-actions">
+                        <span class="project-status">Ongoing</span>
+                        <button class="share-project-button" type="button" data-share-project="index.html">
+                            <span class="share-icon" aria-hidden="true">↗</span> Share project
+                        </button>
+                    </div>
+                </div>
+                <p class="project-summary">
+                    A collaborative university project. Use this space to describe its goals,
+                    scope, and what the team plans to deliver.
+                </p>
+                <div class="project-facts">
+                    <div class="project-fact">
+                        <span class="fact-label">Course</span>
+                        <span class="fact-value">Course Name</span>
+                    </div>
+                    <div class="project-fact">
+                        <span class="fact-label">Deadline</span>
+                        <time class="fact-value" datetime="2026-12-15">15 December 2026</time>
+                        <span class="fact-relative">Due in 71 days</span>
+                    </div>
+                    <div class="project-fact">
+                        <span class="fact-label">Team</span>
+                        <span class="fact-value">3 collaborators</span>
+                    </div>
+                </div>
+            </div>
+            <aside class="project-progress-card" aria-label="Overall project progress">
+                <div class="progress-heading">
+                    <span>Overall progress</span>
+                    <strong>58%</strong>
+                </div>
+                <progress class="progress-track" value="58" max="100" aria-label="Overall project progress">58%</progress>
+                <span class="demo-note">Demonstration progress</span>
+            </aside>
+        </section>
+
+        <div class="project-content-grid">
+            <section class="project-section surface-panel" aria-labelledby="milestones-title">
+                <div class="section-heading">
+                    <div>
+                        <span class="project-kicker">PLAN THE WORK</span>
+                        <h2 id="milestones-title">Team milestones</h2>
+                    </div>
+                    <div class="section-heading-actions">
+                        <span class="section-count">3 milestones</span>
+                        <button class="small-action" type="button" data-open-dialog="milestone-dialog">Add milestone</button>
+                    </div>
+                </div>
+
+                <ol class="milestone-list">
+                    <li class="milestone-item" data-milestone-id="research-outline" data-assignee-initials="KM" data-assignee-name="Kai Morgan">
+                        <span class="milestone-marker milestone-done" aria-label="Completed">✓</span>
+                        <div class="milestone-content">
+                            <div class="milestone-title-row">
+                                <h3>Research and project outline</h3>
+                                <span class="milestone-status status-done">Completed</span>
+                            </div>
+                            <p>Collect sources and agree on the project scope.</p>
+                            <div class="milestone-meta">
+                                <span class="member-chip"><span class="member-avatar avatar-km">KM</span> Kai Morgan</span>
+                                <span class="availability-badge" aria-label="Availability, demonstration schedule from 09:00 to 12:00">
+                                    <span class="availability-icon" aria-hidden="true"></span>09:00–12:00
+                                </span>
+                                <span>Due 20 October</span>
+                            </div>
+                            <div class="milestone-tasks">
+                                <details>
+                                    <summary><span>Tasks</span><span class="task-count" data-task-count></span></summary>
+                                    <ul class="milestone-task-list" data-milestone-tasks="research-outline">
+                                        <li class="task-item" data-task-id="research-sources" data-milestone-id="research-outline" data-assignee-initials="KM" data-assignee-name="Kai Morgan">
+                                            <label><input type="checkbox" data-task-toggle checked><span class="task-title">Collect academic sources</span></label>
+                                            <span class="task-meta"><span class="member-chip"><span class="member-avatar avatar-km">KM</span> Kai Morgan</span></span>
+                                        </li>
+                                        <li class="task-item" data-task-id="research-outline-draft" data-milestone-id="research-outline" data-assignee-initials="KM" data-assignee-name="Kai Morgan">
+                                            <label><input type="checkbox" data-task-toggle checked><span class="task-title">Draft the project outline</span></label>
+                                            <span class="task-meta"><span class="member-chip"><span class="member-avatar avatar-km">KM</span> Kai Morgan</span></span>
+                                        </li>
+                                    </ul>
+                                </details>
+                                <button class="task-add-button" type="button" data-add-task-for="research-outline">+ Add task</button>
+                                <p class="task-storage-error" role="status"></p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="milestone-item" data-milestone-id="first-prototype" data-assignee-initials="JL" data-assignee-name="Jordan Lee">
+                        <span class="milestone-marker milestone-active" aria-label="In progress"></span>
+                        <div class="milestone-content">
+                            <div class="milestone-title-row">
+                                <h3>Build the first project prototype</h3>
+                                <span class="milestone-status status-active">In progress</span>
+                            </div>
+                            <p>Implement the core concept and prepare it for team review.</p>
+                            <div class="milestone-meta">
+                                <span class="member-chip"><span class="member-avatar avatar-jl">JL</span> Jordan Lee</span>
+                                <span class="availability-badge" aria-label="Availability, demonstration schedule from 13:00 to 16:00">
+                                    <span class="availability-icon" aria-hidden="true"></span>13:00–16:00
+                                </span>
+                                <span>Due 10 November</span>
+                            </div>
+                            <div class="milestone-tasks">
+                                <details>
+                                    <summary><span>Tasks</span><span class="task-count" data-task-count></span></summary>
+                                    <ul class="milestone-task-list" data-milestone-tasks="first-prototype">
+                                        <li class="task-item" data-task-id="prototype-wireframes" data-milestone-id="first-prototype" data-assignee-initials="JL" data-assignee-name="Jordan Lee">
+                                            <label><input type="checkbox" data-task-toggle checked><span class="task-title">Create initial wireframes</span></label>
+                                            <span class="task-meta"><span class="member-chip"><span class="member-avatar avatar-jl">JL</span> Jordan Lee</span></span>
+                                        </li>
+                                        <li class="task-item" data-task-id="prototype-core-flow" data-milestone-id="first-prototype" data-assignee-initials="JL" data-assignee-name="Jordan Lee">
+                                            <label><input type="checkbox" data-task-toggle><span class="task-title">Implement the core user flow</span></label>
+                                            <span class="task-meta"><span class="member-chip"><span class="member-avatar avatar-jl">JL</span> Jordan Lee</span></span>
+                                        </li>
+                                    </ul>
+                                </details>
+                                <button class="task-add-button" type="button" data-add-task-for="first-prototype">+ Add task</button>
+                                <p class="task-storage-error" role="status"></p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="milestone-item" data-milestone-id="final-report" data-assignee-initials="AR" data-assignee-name="Alex Rivera">
+                        <span class="milestone-marker milestone-upcoming" aria-label="Not started"></span>
+                        <div class="milestone-content">
+                            <div class="milestone-title-row">
+                                <h3>Write and submit the final report</h3>
+                                <span class="milestone-status status-upcoming">Not started</span>
+                            </div>
+                            <p>Combine findings, results, and references in the final report.</p>
+                            <div class="milestone-meta">
+                                <span class="member-chip"><span class="member-avatar avatar-ar">AR</span> Alex Rivera</span>
+                                <span class="availability-badge" aria-label="Availability, demonstration schedule from 10:00 to 13:00">
+                                    <span class="availability-icon" aria-hidden="true"></span>10:00–13:00
+                                </span>
+                                <span>Due 15 December</span>
+                            </div>
+                            <div class="milestone-tasks">
+                                <details>
+                                    <summary><span>Tasks</span><span class="task-count" data-task-count></span></summary>
+                                    <ul class="milestone-task-list" data-milestone-tasks="final-report">
+                                        <li class="task-item" data-task-id="report-results" data-milestone-id="final-report" data-assignee-initials="AR" data-assignee-name="Alex Rivera">
+                                            <label><input type="checkbox" data-task-toggle><span class="task-title">Document project results</span></label>
+                                            <span class="task-meta"><span class="member-chip"><span class="member-avatar avatar-ar">AR</span> Alex Rivera</span></span>
+                                        </li>
+                                        <li class="task-item" data-task-id="report-references" data-milestone-id="final-report" data-assignee-initials="AR" data-assignee-name="Alex Rivera">
+                                            <label><input type="checkbox" data-task-toggle><span class="task-title">Format references and citations</span></label>
+                                            <span class="task-meta"><span class="member-chip"><span class="member-avatar avatar-ar">AR</span> Alex Rivera</span></span>
+                                        </li>
+                                    </ul>
+                                </details>
+                                <button class="task-add-button" type="button" data-add-task-for="final-report">+ Add task</button>
+                                <p class="task-storage-error" role="status"></p>
+                            </div>
+                        </div>
+                    </li>
+                </ol>
+                <p class="demo-note">Availability hours shown here are examples; set the assigned collaborator's range when adding a milestone.</p>
+            </section>
+
+            <aside class="project-sidebar">
+                <section class="project-section surface-panel" aria-labelledby="team-progress-title">
+                    <div class="section-heading">
+                        <div>
+                            <span class="project-kicker">TEAM CONTRIBUTIONS</span>
+                            <h2 id="team-progress-title">Progress by member</h2>
+                        </div>
+                    </div>
+
+                    <ul class="member-progress-list">
+                        <li class="member-progress">
+                            <div class="member-progress-heading">
+                                <span class="member-chip"><span class="member-avatar avatar-km">KM</span> Kai Morgan</span>
+                                <strong>75%</strong>
+                            </div>
+                            <progress class="progress-track progress-purple" value="75" max="100"
+                                aria-label="Kai Morgan progress, demonstration value 75%">75%</progress>
+                        </li>
+                        <li class="member-progress">
+                            <div class="member-progress-heading">
+                                <span class="member-chip"><span class="member-avatar avatar-jl">JL</span> Jordan Lee</span>
+                                <strong>50%</strong>
+                            </div>
+                            <progress class="progress-track progress-orange" value="50" max="100"
+                                aria-label="Jordan Lee progress, demonstration value 50%">50%</progress>
+                        </li>
+                        <li class="member-progress">
+                            <div class="member-progress-heading">
+                                <span class="member-chip"><span class="member-avatar avatar-ar">AR</span> Alex Rivera</span>
+                                <strong>35%</strong>
+                            </div>
+                            <progress class="progress-track progress-green" value="35" max="100"
+                                aria-label="Alex Rivera progress, demonstration value 35%">35%</progress>
+                        </li>
+                    </ul>
+                    <p class="demo-note">Progress values are for demonstration only.</p>
+                </section>
+
+                <section class="project-section surface-panel" aria-labelledby="quick-links-title">
+                    <div class="section-heading">
+                        <div>
+                            <span class="project-kicker">PROJECT RESOURCES</span>
+                            <h2 id="quick-links-title">Quick links</h2>
+                        </div>
+                        <button class="icon-action" type="button" aria-label="Add a quick link"
+                            data-open-dialog="resource-dialog">+</button>
+                    </div>
+                    <ul class="resource-list">
+                        <li>
+                            <a href="https://github.com/" target="_blank" rel="noreferrer">
+                                <span class="resource-icon resource-code" aria-hidden="true">&lt;/&gt;</span>
+                                <span><strong>Code repository</strong><small>GitHub</small></span>
+                                <span class="resource-arrow" aria-hidden="true">↗</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://drive.google.com/" target="_blank" rel="noreferrer">
+                                <span class="resource-icon resource-files" aria-hidden="true">F</span>
+                                <span><strong>Shared files</strong><small>Google Drive</small></span>
+                                <span class="resource-arrow" aria-hidden="true">↗</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://docs.google.com/document/" target="_blank" rel="noreferrer">
+                                <span class="resource-icon resource-report" aria-hidden="true">D</span>
+                                <span><strong>Project report</strong><small>Working document</small></span>
+                                <span class="resource-arrow" aria-hidden="true">↗</span>
+                            </a>
+                        </li>
+                    </ul>
+                    <p class="demo-note">Replace these example links with your team resources.</p>
+                </section>
+            </aside>
+        </div>
+
+        <dialog class="entry-dialog" id="milestone-dialog" aria-labelledby="milestone-dialog-title">
+            <form class="entry-form" data-entry-form="milestone">
+                <div class="entry-dialog-heading">
+                    <div>
+                        <span class="project-kicker">TEAM PLAN</span>
+                        <h2 id="milestone-dialog-title">Add a milestone</h2>
+                    </div>
+                    <button class="dialog-close" type="button" aria-label="Close dialog" data-close-dialog>×</button>
+                </div>
+                <label>
+                    Milestone
+                    <input name="title" type="text" maxlength="100" required>
+                </label>
+                <label>
+                    Description
+                    <textarea name="description" rows="3" maxlength="240"></textarea>
+                </label>
+                <div class="form-row">
+                    <label>
+                        Assign to
+                        <select name="assignee" required>
+                            <option value="KM|Kai Morgan">Kai Morgan</option>
+                            <option value="JL|Jordan Lee">Jordan Lee</option>
+                            <option value="AR|Alex Rivera">Alex Rivera</option>
+                        </select>
+                    </label>
+                    <label>
+                        Due date
+                        <input name="dueDate" type="date" required>
+                    </label>
+                </div>
+                <div class="form-row">
+                    <label>
+                        Available from
+                        <input name="availabilityStart" type="time" required>
+                    </label>
+                    <label>
+                        Available until
+                        <input name="availabilityEnd" type="time" required>
+                    </label>
+                </div>
+                <p class="field-hint">Set the hours this collaborator can work on this milestone.</p>
+                <p class="form-error" role="alert" data-form-error></p>
+                <div class="entry-form-actions">
+                    <button class="dialog-cancel" type="button" data-close-dialog>Cancel</button>
+                    <button class="small-action" type="submit">Save milestone</button>
+                </div>
+            </form>
+        </dialog>
+
+        <dialog class="entry-dialog" id="task-dialog" aria-labelledby="task-dialog-title">
+            <form class="entry-form" data-entry-form="task">
+                <div class="entry-dialog-heading">
+                    <div>
+                        <span class="project-kicker">BREAK WORK INTO STEPS</span>
+                        <h2 id="task-dialog-title">Add a task</h2>
+                    </div>
+                    <button class="dialog-close" type="button" aria-label="Close dialog" data-close-dialog>×</button>
+                </div>
+                <label>
+                    Task
+                    <input name="title" type="text" maxlength="120" required>
+                </label>
+                <label>
+                    Milestone
+                    <select name="milestoneId" data-task-milestone required></select>
+                </label>
+                <div class="form-row">
+                    <label>
+                        Assign to
+                        <select name="assignee" required>
+                            <option value="KM|Kai Morgan">Kai Morgan</option>
+                            <option value="JL|Jordan Lee">Jordan Lee</option>
+                            <option value="AR|Alex Rivera">Alex Rivera</option>
+                        </select>
+                    </label>
+                    <label>
+                        Due date (optional)
+                        <input name="dueDate" type="date">
+                    </label>
+                </div>
+                <p class="form-error" role="alert" data-form-error></p>
+                <div class="entry-form-actions">
+                    <button class="dialog-cancel" type="button" data-close-dialog>Cancel</button>
+                    <button class="small-action" type="submit">Save task</button>
+                </div>
+            </form>
+        </dialog>
+
+        <dialog class="entry-dialog" id="resource-dialog" aria-labelledby="resource-dialog-title">
+            <form class="entry-form" data-entry-form="resource">
+                <div class="entry-dialog-heading">
+                    <div>
+                        <span class="project-kicker">PROJECT RESOURCES</span>
+                        <h2 id="resource-dialog-title">Add a quick link</h2>
+                    </div>
+                    <button class="dialog-close" type="button" aria-label="Close dialog" data-close-dialog>×</button>
+                </div>
+                <label>
+                    Link name
+                    <input name="title" type="text" maxlength="60" required>
+                </label>
+                <label>
+                    URL
+                    <input name="url" type="url" placeholder="https://example.com" required>
+                </label>
+                <p class="form-error" role="alert" data-form-error></p>
+                <div class="entry-form-actions">
+                    <button class="dialog-cancel" type="button" data-close-dialog>Cancel</button>
+                    <button class="small-action" type="submit">Save link</button>
+                </div>
+            </form>
+        </dialog>
+    </main>
+    <footer class="site-footer" id="site-footer"></footer>
+</body>
+
+</html>
